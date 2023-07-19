@@ -16,7 +16,7 @@
 
                     <a href="{{ route('screening') }}"
                         class="text-decoration-none mt-7 block w-fit font-bold text-white px-3 py-2 rounded-3xl bg-tertiary transition-all hover:bg-secondary-2">Mulai
-                        Test</a>
+                        Tes</a>
                 </div>
                 @if (count($artikel) > 0)
                     <div class="col-span-6 flex flex-col gap-3 items-center justify-center">

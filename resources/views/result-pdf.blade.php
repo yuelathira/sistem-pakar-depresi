@@ -22,7 +22,7 @@
                     <h3 class="text-2xl"><b>Hasil Diagnosa</b></h3>
                     <p class="">Nama: {{ Auth::user()->name }}</p>
                     <p class="">Tanggal Tes: {{ $hasil->created_at->format('d-m-Y') }}</p>
-                    <p class="text-2xl" style="margin-top: 40px">{{ floor($hasil->nilai_akurasi * 100) }}% kemungkinan
+                    <p class="text-2xl" style="margin-top: 40px">{{ floor($hasil->nilai_akurasi * 100) }}%
                         <b>{{ $hasil->diagnosa->namadiagnosa }}</b>
                     </p>
                     <br>

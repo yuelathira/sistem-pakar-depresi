@@ -7,7 +7,7 @@
             <div class="container-result text-center p-5">
                 <div class="result px-">
                     <p class="text-2xl"><b>Hasil Diagnosa</b></p>
-                    <p class="text-2xl">{{ floor($hasil->nilai_akurasi * 100) }}% kemungkinan
+                    <p class="text-2xl">{{ floor($hasil->nilai_akurasi * 100) }}%
                         <b>{{ $hasil->diagnosa->namadiagnosa }}</b>
                     </p>
                     <br>

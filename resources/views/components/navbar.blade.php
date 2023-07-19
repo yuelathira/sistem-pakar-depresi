@@ -4,7 +4,7 @@
         <a class="text-decoration-none font-extrabold underline text-2xl text-white" href="{{ route('home') }}">Sistem Pakar</a>
         <div class="flex gap-8 items-center">
             <a class="text-decoration-none font-bold text-lg text-white screening-btn" href="{{ route('home') }}">Home</a>
-            <a class="text-decoration-none font-bold text-lg text-white screening-btn" href="{{ route('screening') }}">Test Depresi</a>
+            <a class="text-decoration-none font-bold text-lg text-white screening-btn" href="{{ route('screening') }}">Tes Depresi</a>
             <a class="text-decoration-none font-bold text-lg text-white screening-btn" href="{{ route('riwayat') }}">Riwayat</a>
             @auth
                 <form method="POST" action="{{ route('logout') }}">
@@ -19,7 +19,7 @@
         </div>
     </nav>
 </header>
-{{-- 
+{{--
 @push('scripts')
     @guest
         <script>
