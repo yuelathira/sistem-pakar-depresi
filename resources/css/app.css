@@ -1,0 +1,38 @@
+/* @import url('https://fonts.cdnfonts.com/css/gill-sans'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+    }
+    .btn {
+        @apply font-bold text-lg text-white px-6 py-3 rounded-3xl bg-tertiary transition-all hover:bg-secondary-2;
+    }
+    .container-result {
+        margin: 30px auto;
+        width: 100%;
+        display: flex;
+        max-width: 850px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 1);
+    }
+
+    input.input {
+        width: 100%;
+        margin: 2px;
+        border: none;
+        outline: none;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+    .list-solusi ul {
+        list-style: disc;
+        margin-left: 24px;
+    }
+}

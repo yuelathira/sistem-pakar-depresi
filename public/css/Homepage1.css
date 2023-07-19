@@ -1,0 +1,89 @@
+.box {
+  width: 25.5%;
+  margin: 0 auto;
+  background: #E9A178;
+  padding: 20px;
+  border: 10px solid #A84448;
+  border-radius: 40px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1.5em;
+  font-family: roboto;
+  font-weight: bold;
+  text-shadow:1px 1px 6px #F6E1C3;
+  padding: 10px;
+  color: #A84448;
+  border: 5px solid #E9A178;
+  border-radius: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  color: #333;
+  text-shadow:1px 1px 6px #F6E1C3;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 35px;
+  background: #F6E1C3;
+  border-radius: 20px;
+  width: 35%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  font-size: 20px;
+  margin-top: 55px;
+  color: #A84448;
+  text-shadow:1px 1px 6px #E9A178;
+  font-family: roboto;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #A84448;
+  text-shadow:1px 1px 6px #E9A178;
+}
+.popup .close:hover {
+  color: #333;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}

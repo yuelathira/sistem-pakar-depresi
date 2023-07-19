@@ -1,0 +1,75 @@
+.box{
+    margin-top: 100px;
+}
+
+.content {
+  margin-top: 10px;
+  margin-bottom: 63px;
+  box-shadow:10px 15px 10px #E9A178;
+	background-color: #A84448;
+  background-position: top;
+	width:500px;
+	height:500px;
+	left:410px;
+	top:438px;
+	border-radius:60px;
+}
+
+header{
+    padding: 40px;
+}
+
+h1{
+  color: #A84448;
+  text-shadow:2px 2px 2px #E9A178;
+	position:absolute;
+  text-align: center;
+  left: 650px;
+	top: 100px;
+	font-family: roboto;
+  font-weight: bold;
+	font-size: 20px;
+	letter-spacing:1px; 
+}
+
+input {
+    box-shadow:2px 3px 4px #E9A178;
+    margin: 100px;
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+    border-bottom: 1.5px;
+    background-color: #F6E1C3;
+    letter-spacing: 1px;
+  }
+  input::placeholder {
+    color: #A84448;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  input:focus {
+    outline: none;
+    border-image: linear-gradient(to right, #8E9775, #4A503D);
+    border-image-slice: 1;
+  }
+  input:focus::placeholder {
+    color: transparent;
+  }
+  #daftar {
+    box-shadow:1px 2px 4px #E9A178;
+    color: #A84448;
+    font-size: 20px;
+    font-family: roboto;
+    border-radius: 10px;
+    background: #F6E1C3;
+    width: 270px;
+    height: 70px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  #daftar:hover {
+    background-color: #E9A178;
+    color: #F6E1C3;
+  }
+
