@@ -86,7 +86,8 @@ class ScreeningController extends Controller
             // generate array baru berdasarkan key value
             if (isset($groupedArray[""])) {
                 // jika ada nilai kosong hasil p1, p2 dan p3
-                $resultArray[] = [$key, $value / (1 - $groupedArray[""])];
+                if ($key != "")
+                    $resultArray[] = [$key, $value / (1 - $groupedArray[""])];
             } else {
                 $resultArray[] = [$key, $value / 1];
             }
@@ -129,7 +130,6 @@ class ScreeningController extends Controller
     {
         $pengetahuan = Pengetahuan::all();
         $data = $request->all();
-
         // mencari index dari selected gejala
         $selected_index = array_keys(array_filter($data, function ($value) {
             return $value == "ya";
@@ -168,20 +168,26 @@ class ScreeningController extends Controller
         $data = [
             "user_id" => $request->user_id,
             "diagnosa_id" => $hasil,
-            "nilai_akurasi" => $result[1]
+            "nilai_akurasi" => $result[1],
+            "hasil" => json_encode($data)
         ];
 
         $hasil_data = new Hasil($data);
         $hasil_data->save();
 
-        return view("result", ["hasil" => $hasil_data]);
+        $gejala = Gejala::all();
+        $user_answers = json_decode($hasil_data->hasil, true);
+
+        return view("result", ["hasil" => $hasil_data, "gejala" => $gejala, "answers" => $user_answers]);
     }
 
     public function show_hasil(Request $request, $id)
     {
         $hasil = Hasil::find($id);
+        $gejala = Gejala::all();
+        $user_answers = json_decode($hasil->hasil, true);
 
-        return view("result", ["hasil" => $hasil]);
+        return view("result", ["hasil" => $hasil, "gejala" => $gejala, "answers" => $user_answers]);
     }
 
     public function riwayat(Request $request)

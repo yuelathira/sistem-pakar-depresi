@@ -5,11 +5,11 @@
 @endpush
 
 @section('content')
-    <main class="py-14 mb-20 min-h-screen">
-        <div class="container flex flex-col items-center justify-center h-full min-h-screen gap-10">
-            <div class="container-register">
+    <main class="py-14 mb-20 min-h-screen flex items-center justify-center">
+        <div class="container !m-0 flex flex-col items-center justify-center h-full min-h-screen gap-10">
+            <div class="container-register !w-full max-w-[400px]">
                 <div class="register">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('register') }}" class="w-full max-w-[300px]">
                         @csrf
                         <h1 class="text-3xl">Register</h1>
                         <hr>
@@ -48,7 +48,7 @@
                                 href="{{ route('login') }}">disini</a></p>
                     </form>
                 </div>
-                <div class="right">
+                <div class="right hidden lg:block">
                     <img src="assets/images/register.png" alt="">
                 </div>
             </div>

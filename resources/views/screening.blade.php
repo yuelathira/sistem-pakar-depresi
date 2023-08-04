@@ -3,7 +3,7 @@
 @section('content')
     <main class="py-14 mb-20 min-h-screen">
         <div class="container flex flex-col h-full min-h-screen gap-10">
-            <h1 class="text-5xl text-center font-black text-white">Test Gangguan Depresi</h1>
+            <h1 class="text-5xl text-center font-black text-white">Test Kecenderungan Depresi</h1>
             <div class="rounded-lg p-3 bg-tertiary text-white">
                 <p class="font-bold text-lg">Petunjuk pengisian</p>
                 <ol class="list-decimal ps-6 text-lg">

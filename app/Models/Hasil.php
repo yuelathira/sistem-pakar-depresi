@@ -11,7 +11,7 @@ class Hasil extends Model
     use HasFactory;
 
     protected $fillable = [
-        'user_id', 'diagnosa_id', 'nilai_akurasi'
+        'user_id', 'diagnosa_id', 'nilai_akurasi', 'hasil'
     ];
 
     public function diagnosa()

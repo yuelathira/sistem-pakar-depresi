@@ -24,7 +24,7 @@
 
             <div class="flex h-full w-full items-center justify-between mt-10">
                 <div>
-                    <h1 class="font-bold text-3xl">Selamat Datang!</h1>
+                    <h1 class="font-bold text-3xl">Selamat Datang</h1>
                     <p class="text-xl">Di Sistem Pakar Diagnosa Tingkat Depresi</p>
                 </div>
                 <img src="{{ asset('assets/images/login.png') }}" width="240px" alt="">
